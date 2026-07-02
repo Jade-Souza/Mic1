@@ -181,7 +181,7 @@ applicable agreement for further details.
 )
 (symbol
 	(rect 192 128 360 320)
-	(text "ULA_8bits" (rect 5 0 48 14)(font "Arial" (font_size 8)))
+	(text "ULA_8bits" (rect 5 0 64 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 176 25 188)(font "Arial" ))
 	(port
 		(pt 0 32)
@@ -259,7 +259,7 @@ applicable agreement for further details.
 )
 (symbol
 	(rect 488 128 656 320)
-	(text "ULA_8bits" (rect 5 0 48 14)(font "Arial" (font_size 8)))
+	(text "ULA_8bits" (rect 5 0 64 14)(font "Arial" (font_size 8)))
 	(text "inst1" (rect 8 176 31 188)(font "Arial" ))
 	(port
 		(pt 0 32)
@@ -337,7 +337,7 @@ applicable agreement for further details.
 )
 (symbol
 	(rect 768 128 936 320)
-	(text "ULA_8bits" (rect 5 0 48 14)(font "Arial" (font_size 8)))
+	(text "ULA_8bits" (rect 5 0 64 14)(font "Arial" (font_size 8)))
 	(text "inst2" (rect 8 176 31 188)(font "Arial" ))
 	(port
 		(pt 0 32)
@@ -415,7 +415,7 @@ applicable agreement for further details.
 )
 (symbol
 	(rect 1048 128 1216 320)
-	(text "ULA_8bits" (rect 5 0 48 14)(font "Arial" (font_size 8)))
+	(text "ULA_8bits" (rect 5 0 64 14)(font "Arial" (font_size 8)))
 	(text "inst3" (rect 8 176 31 188)(font "Arial" ))
 	(port
 		(pt 0 32)

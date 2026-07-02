@@ -20,8 +20,8 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 200 208)
-	(text "ULA_32bits" (rect 5 0 55 14)(font "Arial" (font_size 8)))
+	(rect 64 64 248 256)
+	(text "ULA_32bits" (rect 5 0 71 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 176 25 188)(font "Arial" ))
 	(port
 		(pt 0 32)
@@ -31,18 +31,18 @@ applicable agreement for further details.
 		(line (pt 0 32)(pt 16 32))
 	)
 	(port
-		(pt 0 48)
-		(input)
-		(text "ENA" (rect 0 0 24 14)(font "Arial" (font_size 8)))
-		(text "ENA" (rect 21 43 45 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
 		(pt 0 64)
 		(input)
+		(text "ENA" (rect 0 0 24 14)(font "Arial" (font_size 8)))
+		(text "ENA" (rect 21 59 45 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 48)
+		(input)
 		(text "A[31..0]" (rect 0 0 44 14)(font "Arial" (font_size 8)))
-		(text "A[31..0]" (rect 21 59 65 73)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64)(line_width 3))
+		(text "A[31..0]" (rect 21 43 65 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
 		(pt 0 80)
@@ -52,18 +52,18 @@ applicable agreement for further details.
 		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port
-		(pt 0 96)
-		(input)
-		(text "CIN" (rect 0 0 18 14)(font "Arial" (font_size 8)))
-		(text "CIN" (rect 21 91 39 105)(font "Arial" (font_size 8)))
-		(line (pt 0 96)(pt 16 96))
-	)
-	(port
 		(pt 0 112)
 		(input)
-		(text "ENB" (rect 0 0 23 14)(font "Arial" (font_size 8)))
-		(text "ENB" (rect 21 107 44 121)(font "Arial" (font_size 8)))
+		(text "CIN" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "CIN" (rect 21 107 39 121)(font "Arial" (font_size 8)))
 		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "ENB" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "ENB" (rect 21 91 44 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
 	)
 	(port
 		(pt 0 128)
@@ -80,18 +80,18 @@ applicable agreement for further details.
 		(line (pt 0 144)(pt 16 144))
 	)
 	(port
-		(pt 184 32)
-		(output)
-		(text "COUT" (rect 0 0 33 14)(font "Arial" (font_size 8)))
-		(text "COUT" (rect 130 27 163 41)(font "Arial" (font_size 8)))
-		(line (pt 184 32)(pt 168 32))
-	)
-	(port
 		(pt 184 48)
 		(output)
+		(text "COUT" (rect 0 0 33 14)(font "Arial" (font_size 8)))
+		(text "COUT" (rect 130 43 163 57)(font "Arial" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
 		(text "OUTPUT[31..0]" (rect 0 0 82 14)(font "Arial" (font_size 8)))
-		(text "OUTPUT[31..0]" (rect 81 43 163 57)(font "Arial" (font_size 8)))
-		(line (pt 184 48)(pt 168 48)(line_width 3))
+		(text "OUTPUT[31..0]" (rect 81 27 163 41)(font "Arial" (font_size 8)))
+		(line (pt 184 32)(pt 168 32)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 168 176))
