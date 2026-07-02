@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIC1
-Thu May 28 10:17:36 2026
+Thu Jun 25 10:27:01 2026
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu May 28 10:17:36 2026           ;
+; Analysis & Synthesis Status        ; Successful - Thu Jun 25 10:27:01 2026           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; MIC1                                            ;
-; Top-level Entity Name              ; DECODER_2TO4                                    ;
+; Top-level Entity Name              ; ULA_1bit                                        ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 4                                               ;
-;     Total combinational functions  ; 4                                               ;
+; Total logic elements               ; 5                                               ;
+;     Total combinational functions  ; 5                                               ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 6                                               ;
+; Total pins                         ; 10                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; DECODER_2TO4       ; MIC1               ;
+; Top-level entity name                                                      ; ULA_1bit           ; MIC1               ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -153,52 +153,55 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                    ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path          ; Library ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------+---------+
-; DECODER_2TO4.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Aluno/Kairo/DECODER_2TO4.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                          ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                ; Library ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------+---------+
+; DECODER_2TO4.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Aluno/JADE/Mic1-main/Mic1-main/DECODER_2TO4.bdf    ;         ;
+; Full_Adder_1bit.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Aluno/JADE/Mic1-main/Mic1-main/Full_Adder_1bit.bdf ;         ;
+; ULA_1bit.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Aluno/JADE/Mic1-main/Mic1-main/ULA_1bit.bdf        ;         ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimated Total logic elements              ; 4     ;
-;                                             ;       ;
-; Total combinational functions               ; 4     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 4     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 4     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 6     ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out node                        ; F0    ;
-; Maximum fan-out                             ; 4     ;
-; Total fan-out                               ; 12    ;
-; Average fan-out                             ; 1.20  ;
-+---------------------------------------------+-------+
++------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary          ;
++---------------------------------------------+--------+
+; Resource                                    ; Usage  ;
++---------------------------------------------+--------+
+; Estimated Total logic elements              ; 5      ;
+;                                             ;        ;
+; Total combinational functions               ; 5      ;
+; Logic element usage by number of LUT inputs ;        ;
+;     -- 4 input functions                    ; 2      ;
+;     -- 3 input functions                    ; 2      ;
+;     -- <=2 input functions                  ; 1      ;
+;                                             ;        ;
+; Logic elements by mode                      ;        ;
+;     -- normal mode                          ; 5      ;
+;     -- arithmetic mode                      ; 0      ;
+;                                             ;        ;
+; Total registers                             ; 0      ;
+;     -- Dedicated logic registers            ; 0      ;
+;     -- I/O registers                        ; 0      ;
+;                                             ;        ;
+; I/O pins                                    ; 10     ;
+; Embedded Multiplier 9-bit elements          ; 0      ;
+; Maximum fan-out node                        ; inst15 ;
+; Maximum fan-out                             ; 2      ;
+; Total fan-out                               ; 18     ;
+; Average fan-out                             ; 1.20   ;
++---------------------------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |DECODER_2TO4              ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 6    ; 0            ; |DECODER_2TO4       ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                       ;
++-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
+; Compilation Hierarchy Node  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Library Name ;
++-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
+; |ULA_1bit                   ; 5 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |ULA_1bit                        ; work         ;
+;    |Full_Adder_1bit:inst17| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_1bit|Full_Adder_1bit:inst17 ; work         ;
++-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -232,23 +235,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu May 28 10:17:35 2026
+    Info: Processing started: Thu Jun 25 10:27:00 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIC1 -c MIC1
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 1 design units, including 1 entities, in source file aula1.bdf
-    Info (12023): Found entity 1: AULA1
 Info (12021): Found 1 design units, including 1 entities, in source file decoder_2to4.bdf
     Info (12023): Found entity 1: DECODER_2TO4
-Info (12127): Elaborating entity "DECODER_2TO4" for the top level hierarchy
+Info (12021): Found 1 design units, including 1 entities, in source file mic1.bdf
+    Info (12023): Found entity 1: MIC1
+Info (12021): Found 1 design units, including 1 entities, in source file full_adder_1bit.bdf
+    Info (12023): Found entity 1: Full_Adder_1bit
+Info (12021): Found 1 design units, including 1 entities, in source file ula_1bit.bdf
+    Info (12023): Found entity 1: ULA_1bit
+Info (12127): Elaborating entity "ULA_1bit" for the top level hierarchy
+Info (12128): Elaborating entity "DECODER_2TO4" for hierarchy "DECODER_2TO4:inst16"
+Info (12128): Elaborating entity "Full_Adder_1bit" for hierarchy "Full_Adder_1bit:inst17"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 10 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 4 logic cells
+Info (21057): Implemented 15 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 2 output pins
+    Info (21061): Implemented 5 logic cells
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 378 megabytes
-    Info: Processing ended: Thu May 28 10:17:36 2026
+    Info: Peak virtual memory: 371 megabytes
+    Info: Processing ended: Thu Jun 25 10:27:01 2026
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
