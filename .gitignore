@@ -1,0 +1,8 @@
+db/
+incremental_db/
+output_files/
+simulation/
+_validation_ref/
+*.qws
+*.vwf.temp
+_build/
