@@ -4,5 +4,6 @@ output_files/
 simulation/
 _validation_ref/
 *.qws
+*.ddb
 *.vwf.temp
 _build/
